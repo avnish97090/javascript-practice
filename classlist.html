@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<div id="myElement">This is a div.</div>
+
+<script>
+  const element = document.getElementById('myElement');
+
+  // Adding a class
+  element.classList.add('highlight');
+
+  // Removing a class after 2 seconds
+  setTimeout(() => {
+    element.classList.remove('highlight');
+  }, 5000);
+</script>
+
+</body>
+</html>
+
